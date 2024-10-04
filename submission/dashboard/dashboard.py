@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 # Load data
-day_data = pd.read_csv('day.csv')
-hour_data = pd.read_csv('hour.csv')
+day_data = pd.read_csv('submission/dashboard/day.csv')
+hour_data = pd.read_csv('submission/dashboard/hour.csv')
 
 # Fill missing data
 day_data.fillna(method='ffill', inplace=True)
